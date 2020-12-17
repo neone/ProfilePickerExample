@@ -10,15 +10,15 @@ import UIKit
 
 import SwiftUI
 
-    struct ImagePicker: UIViewControllerRepresentable {
+    struct ProfileImagePicker: UIViewControllerRepresentable {
         
         @Environment(\.presentationMode) var presentationMode
         @Binding var image: UIImage?
         
         class Coordinator: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
-            let parent: ImagePicker
+            let parent: ProfileImagePicker
             
-            init(_ parent: ImagePicker) {
+            init(_ parent: ProfileImagePicker) {
                 self.parent = parent
             }
             
@@ -34,13 +34,13 @@ import SwiftUI
             Coordinator(self)
         }
         
-        func makeUIViewController(context: UIViewControllerRepresentableContext<ImagePicker>) -> UIImagePickerController {
+        func makeUIViewController(context: UIViewControllerRepresentableContext<ProfileImagePicker>) -> UIImagePickerController {
             let picker = UIImagePickerController()
             picker.delegate = context.coordinator
             return picker
         }
 
-        func updateUIViewController(_ uiViewController: UIImagePickerController, context: UIViewControllerRepresentableContext<ImagePicker>) {
+        func updateUIViewController(_ uiViewController: UIImagePickerController, context: UIViewControllerRepresentableContext<ProfileImagePicker>) {
 
         }
     }

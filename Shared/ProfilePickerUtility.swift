@@ -155,7 +155,7 @@ struct ProfilePickerUtility: View {
                 })
         )
         .sheet(isPresented: $isShowingImagePicker, onDismiss: loadImage) {
-            ImagePicker(image: self.$inputImage)
+            ProfileImagePicker(image: self.$inputImage)
                 .accentColor(Color.systemRed)
         }
     }
