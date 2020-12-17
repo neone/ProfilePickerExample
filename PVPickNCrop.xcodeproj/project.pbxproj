@@ -15,10 +15,18 @@
 		D90436D425879AA800CA0B87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90436A925879AA800CA0B87 /* ContentView.swift */; };
 		D90436D525879AA800CA0B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90436AA25879AA800CA0B87 /* Assets.xcassets */; };
 		D90436D625879AA800CA0B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90436AA25879AA800CA0B87 /* Assets.xcassets */; };
-		D90436F125879B0D00CA0B87 /* ProfileImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90436F025879B0D00CA0B87 /* ProfileImagePicker.swift */; };
-		D90436F225879B0D00CA0B87 /* ProfileImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90436F025879B0D00CA0B87 /* ProfileImagePicker.swift */; };
-		D904371325879C2900CA0B87 /* ImageManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904371225879C2900CA0B87 /* ImageManipulation.swift */; };
-		D904371425879C2900CA0B87 /* ImageManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904371225879C2900CA0B87 /* ImageManipulation.swift */; };
+		D97043D7258BE85C0001BD08 /* ImageManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97043D4258BE85C0001BD08 /* ImageManipulation.swift */; };
+		D97043D8258BE85C0001BD08 /* ImageManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97043D4258BE85C0001BD08 /* ImageManipulation.swift */; };
+		D97043D9258BE85C0001BD08 /* ProfileImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97043D5258BE85C0001BD08 /* ProfileImagePicker.swift */; };
+		D97043DA258BE85C0001BD08 /* ProfileImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97043D5258BE85C0001BD08 /* ProfileImagePicker.swift */; };
+		D97043DB258BE85C0001BD08 /* ProfilePickerUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97043D6258BE85C0001BD08 /* ProfilePickerUtility.swift */; };
+		D97043DC258BE85C0001BD08 /* ProfilePickerUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97043D6258BE85C0001BD08 /* ProfilePickerUtility.swift */; };
+		D97043E6258BEB2A0001BD08 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97043E5258BEB2A0001BD08 /* MainView.swift */; };
+		D97043E7258BEB2A0001BD08 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97043E5258BEB2A0001BD08 /* MainView.swift */; };
+		D97043ED258BF32F0001BD08 /* ProfilePickerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97043EC258BF32F0001BD08 /* ProfilePickerExtensions.swift */; };
+		D97043EE258BF32F0001BD08 /* ProfilePickerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97043EC258BF32F0001BD08 /* ProfilePickerExtensions.swift */; };
+		D97043F4258BF41A0001BD08 /* BottomButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97043F3258BF41A0001BD08 /* BottomButtonsView.swift */; };
+		D97043F5258BF41A0001BD08 /* BottomButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97043F3258BF41A0001BD08 /* BottomButtonsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +61,12 @@
 		D90436CA25879AA800CA0B87 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90436CE25879AA800CA0B87 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		D90436D025879AA800CA0B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D90436F025879B0D00CA0B87 /* ProfileImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImagePicker.swift; sourceTree = "<group>"; };
-		D904371225879C2900CA0B87 /* ImageManipulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManipulation.swift; sourceTree = "<group>"; };
-		D9A55FB3258BBC9200FA1D58 /* ProfilePickerUtility */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ProfilePickerUtility; path = ../../../../Neone.GitHub/NDProfilePickerUtility/ProfilePickerUtility; sourceTree = "<group>"; };
+		D97043D4258BE85C0001BD08 /* ImageManipulation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageManipulation.swift; sourceTree = "<group>"; };
+		D97043D5258BE85C0001BD08 /* ProfileImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImagePicker.swift; sourceTree = "<group>"; };
+		D97043D6258BE85C0001BD08 /* ProfilePickerUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePickerUtility.swift; sourceTree = "<group>"; };
+		D97043E5258BEB2A0001BD08 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		D97043EC258BF32F0001BD08 /* ProfilePickerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePickerExtensions.swift; sourceTree = "<group>"; };
+		D97043F3258BF41A0001BD08 /* BottomButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomButtonsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,17 +110,17 @@
 				D90436C225879AA800CA0B87 /* Tests iOS */,
 				D90436CD25879AA800CA0B87 /* Tests macOS */,
 				D90436B025879AA800CA0B87 /* Products */,
+				D9A55FC4258BBE0300FA1D58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		D90436A725879AA800CA0B87 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				D9A55FB3258BBC9200FA1D58 /* ProfilePickerUtility */,
 				D90436A825879AA800CA0B87 /* PVPickNCropApp.swift */,
 				D90436A925879AA800CA0B87 /* ContentView.swift */,
-				D90436F025879B0D00CA0B87 /* ProfileImagePicker.swift */,
-				D904371225879C2900CA0B87 /* ImageManipulation.swift */,
+				D97043E5258BEB2A0001BD08 /* MainView.swift */,
+				D97043D3258BE85C0001BD08 /* ProfilePickerUtility */,
 				D90436AA25879AA800CA0B87 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -161,6 +172,25 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		D97043D3258BE85C0001BD08 /* ProfilePickerUtility */ = {
+			isa = PBXGroup;
+			children = (
+				D97043D4258BE85C0001BD08 /* ImageManipulation.swift */,
+				D97043D5258BE85C0001BD08 /* ProfileImagePicker.swift */,
+				D97043D6258BE85C0001BD08 /* ProfilePickerUtility.swift */,
+				D97043F3258BF41A0001BD08 /* BottomButtonsView.swift */,
+				D97043EC258BF32F0001BD08 /* ProfilePickerExtensions.swift */,
+			);
+			path = ProfilePickerUtility;
+			sourceTree = "<group>";
+		};
+		D9A55FC4258BBE0300FA1D58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,8 +205,11 @@
 			buildRules = (
 			);
 			dependencies = (
+				D9A55FD8258BBEDB00FA1D58 /* PBXTargetDependency */,
 			);
 			name = "PVPickNCrop (iOS)";
+			packageProductDependencies = (
+			);
 			productName = "PVPickNCrop (iOS)";
 			productReference = D90436AF25879AA800CA0B87 /* PVPickNCrop.app */;
 			productType = "com.apple.product-type.application";
@@ -268,6 +301,8 @@
 				Base,
 			);
 			mainGroup = D90436A225879AA700CA0B87;
+			packageReferences = (
+			);
 			productRefGroup = D90436B025879AA800CA0B87 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -318,10 +353,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D97043ED258BF32F0001BD08 /* ProfilePickerExtensions.swift in Sources */,
+				D97043F4258BF41A0001BD08 /* BottomButtonsView.swift in Sources */,
 				D90436D325879AA800CA0B87 /* ContentView.swift in Sources */,
-				D90436F125879B0D00CA0B87 /* ProfileImagePicker.swift in Sources */,
-				D904371325879C2900CA0B87 /* ImageManipulation.swift in Sources */,
+				D97043E6258BEB2A0001BD08 /* MainView.swift in Sources */,
+				D97043D9258BE85C0001BD08 /* ProfileImagePicker.swift in Sources */,
 				D90436D125879AA800CA0B87 /* PVPickNCropApp.swift in Sources */,
+				D97043D7258BE85C0001BD08 /* ImageManipulation.swift in Sources */,
+				D97043DB258BE85C0001BD08 /* ProfilePickerUtility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,10 +368,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D97043EE258BF32F0001BD08 /* ProfilePickerExtensions.swift in Sources */,
+				D97043F5258BF41A0001BD08 /* BottomButtonsView.swift in Sources */,
 				D90436D425879AA800CA0B87 /* ContentView.swift in Sources */,
-				D90436F225879B0D00CA0B87 /* ProfileImagePicker.swift in Sources */,
-				D904371425879C2900CA0B87 /* ImageManipulation.swift in Sources */,
+				D97043E7258BEB2A0001BD08 /* MainView.swift in Sources */,
+				D97043DA258BE85C0001BD08 /* ProfileImagePicker.swift in Sources */,
 				D90436D225879AA800CA0B87 /* PVPickNCropApp.swift in Sources */,
+				D97043D8258BE85C0001BD08 /* ImageManipulation.swift in Sources */,
+				D97043DC258BE85C0001BD08 /* ProfilePickerUtility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +407,10 @@
 			isa = PBXTargetDependency;
 			target = D90436B625879AA800CA0B87 /* PVPickNCrop (macOS) */;
 			targetProxy = D90436CB25879AA800CA0B87 /* PBXContainerItemProxy */;
+		};
+		D9A55FD8258BBEDB00FA1D58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = D9A55FD7258BBEDB00FA1D58 /* ProfilePickerUtility */;
 		};
 /* End PBXTargetDependency section */
 
@@ -714,6 +761,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D9A55FD7258BBEDB00FA1D58 /* ProfilePickerUtility */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ProfilePickerUtility;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D90436A325879AA700CA0B87 /* Project object */;
 }
