@@ -15,8 +15,6 @@
 		D90436D425879AA800CA0B87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90436A925879AA800CA0B87 /* ContentView.swift */; };
 		D90436D525879AA800CA0B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90436AA25879AA800CA0B87 /* Assets.xcassets */; };
 		D90436D625879AA800CA0B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90436AA25879AA800CA0B87 /* Assets.xcassets */; };
-		D90436EA25879AE300CA0B87 /* ProfilePickerUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90436E925879AE300CA0B87 /* ProfilePickerUtility.swift */; };
-		D90436EB25879AE300CA0B87 /* ProfilePickerUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90436E925879AE300CA0B87 /* ProfilePickerUtility.swift */; };
 		D90436F125879B0D00CA0B87 /* ProfileImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90436F025879B0D00CA0B87 /* ProfileImagePicker.swift */; };
 		D90436F225879B0D00CA0B87 /* ProfileImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90436F025879B0D00CA0B87 /* ProfileImagePicker.swift */; };
 		D904371325879C2900CA0B87 /* ImageManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904371225879C2900CA0B87 /* ImageManipulation.swift */; };
@@ -55,7 +53,6 @@
 		D90436CA25879AA800CA0B87 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90436CE25879AA800CA0B87 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		D90436D025879AA800CA0B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D90436E925879AE300CA0B87 /* ProfilePickerUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePickerUtility.swift; sourceTree = "<group>"; };
 		D90436F025879B0D00CA0B87 /* ProfileImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImagePicker.swift; sourceTree = "<group>"; };
 		D904371225879C2900CA0B87 /* ImageManipulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManipulation.swift; sourceTree = "<group>"; };
 		D9A55FB3258BBC9200FA1D58 /* ProfilePickerUtility */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ProfilePickerUtility; path = ../../../../Neone.GitHub/NDProfilePickerUtility/ProfilePickerUtility; sourceTree = "<group>"; };
@@ -111,7 +108,6 @@
 				D9A55FB3258BBC9200FA1D58 /* ProfilePickerUtility */,
 				D90436A825879AA800CA0B87 /* PVPickNCropApp.swift */,
 				D90436A925879AA800CA0B87 /* ContentView.swift */,
-				D90436E925879AE300CA0B87 /* ProfilePickerUtility.swift */,
 				D90436F025879B0D00CA0B87 /* ProfileImagePicker.swift */,
 				D904371225879C2900CA0B87 /* ImageManipulation.swift */,
 				D90436AA25879AA800CA0B87 /* Assets.xcassets */,
@@ -325,7 +321,6 @@
 				D90436D325879AA800CA0B87 /* ContentView.swift in Sources */,
 				D90436F125879B0D00CA0B87 /* ProfileImagePicker.swift in Sources */,
 				D904371325879C2900CA0B87 /* ImageManipulation.swift in Sources */,
-				D90436EA25879AE300CA0B87 /* ProfilePickerUtility.swift in Sources */,
 				D90436D125879AA800CA0B87 /* PVPickNCropApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,7 +332,6 @@
 				D90436D425879AA800CA0B87 /* ContentView.swift in Sources */,
 				D90436F225879B0D00CA0B87 /* ProfileImagePicker.swift in Sources */,
 				D904371425879C2900CA0B87 /* ImageManipulation.swift in Sources */,
-				D90436EB25879AE300CA0B87 /* ProfilePickerUtility.swift in Sources */,
 				D90436D225879AA800CA0B87 /* PVPickNCropApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
