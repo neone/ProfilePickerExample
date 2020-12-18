@@ -25,10 +25,12 @@ struct ContentView: View {
                 MainView(finalImage: $finalImage, inputImage: $inputImage, currentStep: $currentStep)
             case .utility:
                 ProfilePickerUtility(image: $finalImage, step: $currentStep, showPicker: true)
+                    
             }
             
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .animation(.easeInOut(duration: 0.24))
     }
     
     func loadImage() {
