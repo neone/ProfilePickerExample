@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		D90436C425879AA800CA0B87 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90436C325879AA800CA0B87 /* Tests_iOS.swift */; };
 		D90436CF25879AA800CA0B87 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90436CE25879AA800CA0B87 /* Tests_macOS.swift */; };
-		D90436D125879AA800CA0B87 /* PVPickNCropApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90436A825879AA800CA0B87 /* PVPickNCropApp.swift */; };
-		D90436D225879AA800CA0B87 /* PVPickNCropApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90436A825879AA800CA0B87 /* PVPickNCropApp.swift */; };
+		D90436D125879AA800CA0B87 /* ProfilePickerExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90436A825879AA800CA0B87 /* ProfilePickerExampleApp.swift */; };
+		D90436D225879AA800CA0B87 /* ProfilePickerExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90436A825879AA800CA0B87 /* ProfilePickerExampleApp.swift */; };
 		D90436D325879AA800CA0B87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90436A925879AA800CA0B87 /* ContentView.swift */; };
 		D90436D425879AA800CA0B87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90436A925879AA800CA0B87 /* ContentView.swift */; };
 		D90436D525879AA800CA0B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90436AA25879AA800CA0B87 /* Assets.xcassets */; };
@@ -51,12 +51,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D90436A825879AA800CA0B87 /* PVPickNCropApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVPickNCropApp.swift; sourceTree = "<group>"; };
+		D90436A825879AA800CA0B87 /* ProfilePickerExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePickerExampleApp.swift; sourceTree = "<group>"; };
 		D90436A925879AA800CA0B87 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D90436AA25879AA800CA0B87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D90436AF25879AA800CA0B87 /* PVPickNCrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PVPickNCrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90436AF25879AA800CA0B87 /* ProfilePickerExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProfilePickerExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90436B225879AA800CA0B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D90436B725879AA800CA0B87 /* PVPickNCrop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PVPickNCrop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D90436B725879AA800CA0B87 /* ProfilePickerExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProfilePickerExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90436B925879AA800CA0B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D90436BA25879AA800CA0B87 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		D90436BF25879AA800CA0B87 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,7 +123,7 @@
 		D90436A725879AA800CA0B87 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				D90436A825879AA800CA0B87 /* PVPickNCropApp.swift */,
+				D90436A825879AA800CA0B87 /* ProfilePickerExampleApp.swift */,
 				D90436A925879AA800CA0B87 /* ContentView.swift */,
 				D97043E5258BEB2A0001BD08 /* MainView.swift */,
 				D97043D3258BE85C0001BD08 /* ProfilePickerUtility */,
@@ -135,8 +135,8 @@
 		D90436B025879AA800CA0B87 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D90436AF25879AA800CA0B87 /* PVPickNCrop.app */,
-				D90436B725879AA800CA0B87 /* PVPickNCrop.app */,
+				D90436AF25879AA800CA0B87 /* ProfilePickerExampleApp.app */,
+				D90436B725879AA800CA0B87 /* ProfilePickerExampleApp.app */,
 				D90436BF25879AA800CA0B87 /* Tests iOS.xctest */,
 				D90436CA25879AA800CA0B87 /* Tests macOS.xctest */,
 			);
@@ -210,9 +210,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D90436AE25879AA800CA0B87 /* PVPickNCrop (iOS) */ = {
+		D90436AE25879AA800CA0B87 /* ProfilePickerExampleApp (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D90436D925879AA800CA0B87 /* Build configuration list for PBXNativeTarget "PVPickNCrop (iOS)" */;
+			buildConfigurationList = D90436D925879AA800CA0B87 /* Build configuration list for PBXNativeTarget "ProfilePickerExampleApp (iOS)" */;
 			buildPhases = (
 				D90436AB25879AA800CA0B87 /* Sources */,
 				D90436AC25879AA800CA0B87 /* Frameworks */,
@@ -223,16 +223,16 @@
 			dependencies = (
 				D9A55FD8258BBEDB00FA1D58 /* PBXTargetDependency */,
 			);
-			name = "PVPickNCrop (iOS)";
+			name = "ProfilePickerExampleApp (iOS)";
 			packageProductDependencies = (
 			);
 			productName = "PVPickNCrop (iOS)";
-			productReference = D90436AF25879AA800CA0B87 /* PVPickNCrop.app */;
+			productReference = D90436AF25879AA800CA0B87 /* ProfilePickerExampleApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D90436B625879AA800CA0B87 /* PVPickNCrop (macOS) */ = {
+		D90436B625879AA800CA0B87 /* ProfilePickerExampleApp (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D90436DC25879AA800CA0B87 /* Build configuration list for PBXNativeTarget "PVPickNCrop (macOS)" */;
+			buildConfigurationList = D90436DC25879AA800CA0B87 /* Build configuration list for PBXNativeTarget "ProfilePickerExampleApp (macOS)" */;
 			buildPhases = (
 				D90436B325879AA800CA0B87 /* Sources */,
 				D90436B425879AA800CA0B87 /* Frameworks */,
@@ -242,9 +242,9 @@
 			);
 			dependencies = (
 			);
-			name = "PVPickNCrop (macOS)";
+			name = "ProfilePickerExampleApp (macOS)";
 			productName = "PVPickNCrop (macOS)";
-			productReference = D90436B725879AA800CA0B87 /* PVPickNCrop.app */;
+			productReference = D90436B725879AA800CA0B87 /* ProfilePickerExampleApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D90436BE25879AA800CA0B87 /* Tests iOS */ = {
@@ -308,7 +308,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D90436A625879AA700CA0B87 /* Build configuration list for PBXProject "PVPickNCrop" */;
+			buildConfigurationList = D90436A625879AA700CA0B87 /* Build configuration list for PBXProject "ProfilePickerExampleApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -323,8 +323,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D90436AE25879AA800CA0B87 /* PVPickNCrop (iOS) */,
-				D90436B625879AA800CA0B87 /* PVPickNCrop (macOS) */,
+				D90436AE25879AA800CA0B87 /* ProfilePickerExampleApp (iOS) */,
+				D90436B625879AA800CA0B87 /* ProfilePickerExampleApp (macOS) */,
 				D90436BE25879AA800CA0B87 /* Tests iOS */,
 				D90436C925879AA800CA0B87 /* Tests macOS */,
 			);
@@ -376,7 +376,7 @@
 				D97043E6258BEB2A0001BD08 /* MainView.swift in Sources */,
 				D9704410258BF65A0001BD08 /* LiveFeedbackAndImageView.swift in Sources */,
 				D97043D9258BE85C0001BD08 /* ProfileImagePicker.swift in Sources */,
-				D90436D125879AA800CA0B87 /* PVPickNCropApp.swift in Sources */,
+				D90436D125879AA800CA0B87 /* ProfilePickerExampleApp.swift in Sources */,
 				D97043D7258BE85C0001BD08 /* ImageManipulation.swift in Sources */,
 				D97043DB258BE85C0001BD08 /* ProfilePickerUtility.swift in Sources */,
 			);
@@ -393,7 +393,7 @@
 				D97043E7258BEB2A0001BD08 /* MainView.swift in Sources */,
 				D9704411258BF65A0001BD08 /* LiveFeedbackAndImageView.swift in Sources */,
 				D97043DA258BE85C0001BD08 /* ProfileImagePicker.swift in Sources */,
-				D90436D225879AA800CA0B87 /* PVPickNCropApp.swift in Sources */,
+				D90436D225879AA800CA0B87 /* ProfilePickerExampleApp.swift in Sources */,
 				D97043D8258BE85C0001BD08 /* ImageManipulation.swift in Sources */,
 				D97043DC258BE85C0001BD08 /* ProfilePickerUtility.swift in Sources */,
 			);
@@ -420,12 +420,12 @@
 /* Begin PBXTargetDependency section */
 		D90436C125879AA800CA0B87 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D90436AE25879AA800CA0B87 /* PVPickNCrop (iOS) */;
+			target = D90436AE25879AA800CA0B87 /* ProfilePickerExampleApp (iOS) */;
 			targetProxy = D90436C025879AA800CA0B87 /* PBXContainerItemProxy */;
 		};
 		D90436CC25879AA800CA0B87 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D90436B625879AA800CA0B87 /* PVPickNCrop (macOS) */;
+			target = D90436B625879AA800CA0B87 /* ProfilePickerExampleApp (macOS) */;
 			targetProxy = D90436CB25879AA800CA0B87 /* PBXContainerItemProxy */;
 		};
 		D9A55FD8258BBEDB00FA1D58 /* PBXTargetDependency */ = {
@@ -565,7 +565,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.neone.NDContactsExampleApp.PVPickNCrop;
-				PRODUCT_NAME = PVPickNCrop;
+				PRODUCT_NAME = ProfilePickerExampleApp;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -587,7 +587,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.neone.NDContactsExampleApp.PVPickNCrop;
-				PRODUCT_NAME = PVPickNCrop;
+				PRODUCT_NAME = ProfilePickerExampleApp;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -613,7 +613,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.neone.NDContactsExampleApp.PVPickNCrop;
-				PRODUCT_NAME = PVPickNCrop;
+				PRODUCT_NAME = ProfilePickerExampleApp;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -637,7 +637,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.neone.NDContactsExampleApp.PVPickNCrop;
-				PRODUCT_NAME = PVPickNCrop;
+				PRODUCT_NAME = ProfilePickerExampleApp;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -735,7 +735,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D90436A625879AA700CA0B87 /* Build configuration list for PBXProject "PVPickNCrop" */ = {
+		D90436A625879AA700CA0B87 /* Build configuration list for PBXProject "ProfilePickerExampleApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D90436D725879AA800CA0B87 /* Debug */,
@@ -744,7 +744,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D90436D925879AA800CA0B87 /* Build configuration list for PBXNativeTarget "PVPickNCrop (iOS)" */ = {
+		D90436D925879AA800CA0B87 /* Build configuration list for PBXNativeTarget "ProfilePickerExampleApp (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D90436DA25879AA800CA0B87 /* Debug */,
@@ -753,7 +753,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D90436DC25879AA800CA0B87 /* Build configuration list for PBXNativeTarget "PVPickNCrop (macOS)" */ = {
+		D90436DC25879AA800CA0B87 /* Build configuration list for PBXNativeTarget "ProfilePickerExampleApp (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D90436DD25879AA800CA0B87 /* Debug */,

@@ -1,5 +1,5 @@
 //
-//  PVPickNCropApp.swift
+//  ProfilePickerExampleApp.swift
 //  Shared
 //
 //  Created by Dave Glassco on 12/14/20.
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct PVPickNCropApp: App {
+struct ProfilePickerExampleApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
