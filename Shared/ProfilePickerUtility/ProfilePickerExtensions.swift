@@ -129,7 +129,7 @@ extension ProfilePickerUtility {
         }
     }
     
-    func save() {
+    func saveCroppedImage() {
         
         let scale = (inputImage?.size.width)! / profileW
         

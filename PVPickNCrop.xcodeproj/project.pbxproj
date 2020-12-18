@@ -27,6 +27,10 @@
 		D97043EE258BF32F0001BD08 /* ProfilePickerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97043EC258BF32F0001BD08 /* ProfilePickerExtensions.swift */; };
 		D97043F4258BF41A0001BD08 /* BottomButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97043F3258BF41A0001BD08 /* BottomButtonsView.swift */; };
 		D97043F5258BF41A0001BD08 /* BottomButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97043F3258BF41A0001BD08 /* BottomButtonsView.swift */; };
+		D9704409258BF6170001BD08 /* ShowPhotoPickerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9704408258BF6170001BD08 /* ShowPhotoPickerButton.swift */; };
+		D970440A258BF6170001BD08 /* ShowPhotoPickerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9704408258BF6170001BD08 /* ShowPhotoPickerButton.swift */; };
+		D9704410258BF65A0001BD08 /* LiveFeedbackAndImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D970440F258BF65A0001BD08 /* LiveFeedbackAndImageView.swift */; };
+		D9704411258BF65A0001BD08 /* LiveFeedbackAndImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D970440F258BF65A0001BD08 /* LiveFeedbackAndImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,8 @@
 		D97043E5258BEB2A0001BD08 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D97043EC258BF32F0001BD08 /* ProfilePickerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePickerExtensions.swift; sourceTree = "<group>"; };
 		D97043F3258BF41A0001BD08 /* BottomButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomButtonsView.swift; sourceTree = "<group>"; };
+		D9704408258BF6170001BD08 /* ShowPhotoPickerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPhotoPickerButton.swift; sourceTree = "<group>"; };
+		D970440F258BF65A0001BD08 /* LiveFeedbackAndImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveFeedbackAndImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,10 +184,20 @@
 				D97043D4258BE85C0001BD08 /* ImageManipulation.swift */,
 				D97043D5258BE85C0001BD08 /* ProfileImagePicker.swift */,
 				D97043D6258BE85C0001BD08 /* ProfilePickerUtility.swift */,
-				D97043F3258BF41A0001BD08 /* BottomButtonsView.swift */,
+				D9704403258BF5F30001BD08 /* Views */,
 				D97043EC258BF32F0001BD08 /* ProfilePickerExtensions.swift */,
 			);
 			path = ProfilePickerUtility;
+			sourceTree = "<group>";
+		};
+		D9704403258BF5F30001BD08 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D97043F3258BF41A0001BD08 /* BottomButtonsView.swift */,
+				D9704408258BF6170001BD08 /* ShowPhotoPickerButton.swift */,
+				D970440F258BF65A0001BD08 /* LiveFeedbackAndImageView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		D9A55FC4258BBE0300FA1D58 /* Frameworks */ = {
@@ -353,10 +369,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9704409258BF6170001BD08 /* ShowPhotoPickerButton.swift in Sources */,
 				D97043ED258BF32F0001BD08 /* ProfilePickerExtensions.swift in Sources */,
 				D97043F4258BF41A0001BD08 /* BottomButtonsView.swift in Sources */,
 				D90436D325879AA800CA0B87 /* ContentView.swift in Sources */,
 				D97043E6258BEB2A0001BD08 /* MainView.swift in Sources */,
+				D9704410258BF65A0001BD08 /* LiveFeedbackAndImageView.swift in Sources */,
 				D97043D9258BE85C0001BD08 /* ProfileImagePicker.swift in Sources */,
 				D90436D125879AA800CA0B87 /* PVPickNCropApp.swift in Sources */,
 				D97043D7258BE85C0001BD08 /* ImageManipulation.swift in Sources */,
@@ -368,10 +386,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D970440A258BF6170001BD08 /* ShowPhotoPickerButton.swift in Sources */,
 				D97043EE258BF32F0001BD08 /* ProfilePickerExtensions.swift in Sources */,
 				D97043F5258BF41A0001BD08 /* BottomButtonsView.swift in Sources */,
 				D90436D425879AA800CA0B87 /* ContentView.swift in Sources */,
 				D97043E7258BEB2A0001BD08 /* MainView.swift in Sources */,
+				D9704411258BF65A0001BD08 /* LiveFeedbackAndImageView.swift in Sources */,
 				D97043DA258BE85C0001BD08 /* ProfileImagePicker.swift in Sources */,
 				D90436D225879AA800CA0B87 /* PVPickNCropApp.swift in Sources */,
 				D97043D8258BE85C0001BD08 /* ImageManipulation.swift in Sources */,

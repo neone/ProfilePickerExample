@@ -6,11 +6,6 @@
 //
 
 import SwiftUI
-//import ProfilePickerUtility
-
-
-
-
 
 struct ContentView: View {
     @Environment(\.colorScheme) var colorScheme
@@ -28,14 +23,11 @@ struct ContentView: View {
             case .main:
                 MainView(finalImage: $finalImage, isShowingPhotoSelectionSheet: $isShowingPhotoSelectionSheet, inputImage: $inputImage, currentStep: $currentStep)
             case .utility:
-                ProfilePickerUtility(image: $finalImage, step: $currentStep)
+                ProfilePickerUtility(image: $finalImage, step: $currentStep, showPicker: true)
             }
             
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-//        .fullScreenCover(isPresented: $isShowingPhotoSelectionSheet, onDismiss: loadImage) {
-//            ProfilePickerUtility(image: $finalImage)
-//        }
     }
     
     func loadImage() {

@@ -14,13 +14,23 @@ public enum PickProfileSteps {
     case utility
 }
 
-
 public struct ProfilePickerUtility: View {
+    @Binding var croppedImage: Image?
+    @Binding var currentStep: PickProfileSteps
     
-//    @Environment(\.presentationMode) var presentationMode
-    var showFeedback = false
+    @State var isShowingImagePicker: Bool
+    @State var profileImage: Image?
+    @State var inputImage: UIImage?
+    
+    //Zoom and Drag ...
+    @State var currentAmount: CGFloat = 0
+    @State var finalAmount: CGFloat = 1
+    
+    @State var currentPosition: CGSize = .zero
+    @State var newPosition: CGSize = .zero
     
     ///Testing stuff
+    var showFeedback = false
     @State var inputW: CGFloat = 750.5556577
     @State var inputH: CGFloat = 1336.5556577
     @State var theAspectRatio: CGFloat = 0.0
@@ -31,36 +41,28 @@ public struct ProfilePickerUtility: View {
     @State var horizontalOffset: CGFloat = 0.0
     @State var verticalOffset: CGFloat = 0.0
     
-    @Binding var croppedImage: Image?
-    @Binding var currentStep: PickProfileSteps
-    
-    @State var isShowingImagePicker: Bool = false
-    @State var profileImage: Image?
-    @State var inputImage: UIImage?
-    
-    
-    
-    //Zoom and Drag ...
-    @State var currentAmount: CGFloat = 0
-    @State var finalAmount: CGFloat = 1
-    
-    @State var currentPosition: CGSize = .zero
-    @State var newPosition: CGSize = .zero
-    
+    //Local Vars
     var firstLaunch = true
     let inset: CGFloat = 15
     let screenAspect = UIScreen.main.bounds.width / UIScreen.main.bounds.height
     let aniDuration = 0.2
     
+    @State var newTest: Int = 1
     
-    public init(image: Binding<Image?>, step: Binding<PickProfileSteps>) {
+    public init(image: Binding<Image?>, step: Binding<PickProfileSteps>, showPicker: Bool) {
         self._croppedImage = image
         self._currentStep = step
+        self._isShowingImagePicker = State(initialValue: false) 
     }
     
+    func pickerActived() {
+        croppedImage = nil
+        profileImage = nil
+        inputImage = nil
+        isShowingImagePicker = true
+    }
     
     public var body: some View {
-        
         ZStack {
             Color.black.opacity(0.8)
             
@@ -98,25 +100,20 @@ public struct ProfilePickerUtility: View {
                     LiveFeedbackAndImageView(finalAmount: $finalAmount , inputW: $inputW, inputH: $inputH, profileW: $profileW, profileH: $profileH, newPosition: $newPosition)
                 }
                 
-                if croppedImage != nil {
-                    croppedImage?
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 90)
-                        .aspectRatio(contentMode: .fit)
-                }
-                
                 Spacer()
-                
                 HStack{
                     //Bottom Buttons
-                    BottomButtonsView(step: $currentStep, inputImage: $inputImage, profileImage: $profileImage, isShowingImagePicker: $isShowingImagePicker, function: save)
+                    BottomButtonsView(step: $currentStep, inputImage: $inputImage, pickerActivated: pickerActived, saveFunction: saveCroppedImage)
                 }
             }
             .padding()
         }
         .edgesIgnoringSafeArea(.all)
         .statusBar(hidden: true)
+        .sheet(isPresented: $isShowingImagePicker, onDismiss: loadImage) {
+            ProfileImagePicker(test: self.$newTest, image: self.$inputImage)
+                .accentColor(Color.systemOrange)
+        }
         .gesture(
             MagnificationGesture()
                 .onChanged { amount in
@@ -148,13 +145,6 @@ public struct ProfilePickerUtility: View {
                     //                    setCroppedImage()
                 })
         )
-        .sheet(isPresented: $isShowingImagePicker, onDismiss: loadImage) {
-            ProfileImagePicker(image: self.$inputImage)
-                .accentColor(Color.systemRed)
-        }
-        .onAppear(perform: {
-            isShowingImagePicker = true
-        })
     }
 }
 
@@ -162,43 +152,12 @@ public struct ProfilePickerUtility: View {
 
 struct ContactPhotoSelectionSheet_Previews: PreviewProvider {
     static var previews: some View {
-        ProfilePickerUtility(image: .constant(nil), step: .constant(.main))
+        ProfilePickerUtility(image: .constant(nil), step: .constant(.main), showPicker: false)
     }
 
 }
 
-struct LiveFeedbackAndImageView: View {
-    @Binding var finalAmount: CGFloat
-    @Binding var inputW: CGFloat
-    @Binding var inputH: CGFloat
-    @Binding var profileW: CGFloat
-    @Binding var profileH: CGFloat
-    @Binding var newPosition: CGSize
-    
-    var body: some View {
-        VStack {
-            Text("zoom:\(finalAmount, specifier: "%.2f")")
-            Text("Input: \(inputW, specifier: "%.2f") x \(inputH, specifier: "%.2f")")
-            Text("Profile: \(profileW, specifier: "%.2f") x \(profileH, specifier: "%.2f")")
-            Text("Offset x: \(newPosition.width, specifier: "%.2f") y: \(newPosition.height, specifier: "%.2f")")
-        }
-        .foregroundColor(.systemYellow)
-        .padding(.top, 50)
-    }
-}
 
 
-struct ShowPhotoPickerButton: View {
-    var body: some View {
-        ZStack {
-            Image(systemName: "circle.fill")
-                .font(.custom("system", size: 45))
-                .opacity(0.9)
-                .foregroundColor(.white)
-            
-            Image(systemName: "photo.on.rectangle")
-                .imageScale(.medium)
-                .foregroundColor(.black)
-        }
-    }
-}
+
+

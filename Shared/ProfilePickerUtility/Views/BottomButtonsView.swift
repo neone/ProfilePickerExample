@@ -10,10 +10,13 @@ import SwiftUI
 struct BottomButtonsView: View {
     @Binding var step: PickProfileSteps
     @Binding var inputImage: UIImage?
-    @Binding var profileImage: Image?
-    @Binding var isShowingImagePicker: Bool
+//    @Binding var profileImage: Image?
+//    @Binding var isShowingImagePicker: Bool
     
-    var function: () -> Void
+    
+    var pickerActivated: () -> Void
+    var saveFunction: () -> Void
+    
     
     var body: some View {
         HStack {
@@ -25,8 +28,8 @@ struct BottomButtonsView: View {
             Spacer()
             
             Button(action: {
-                profileImage = nil
-                isShowingImagePicker = true
+                inputImage = nil
+                pickerActivated()
             }, label: {
                 ShowPhotoPickerButton()
             })
@@ -35,7 +38,7 @@ struct BottomButtonsView: View {
             Button(
                 action: {
                     if inputImage != nil {
-                        function()
+                        saveFunction()
                         step = .main
                     }
                 },
@@ -48,12 +51,10 @@ struct BottomButtonsView: View {
 
 struct BottomButtonsView_Previews: PreviewProvider {
     static var previews: some View {
-        
-            BottomButtonsView(step: .constant(.main), inputImage: .constant(nil), profileImage: .constant(nil), isShowingImagePicker: .constant(false), function: {})
+        BottomButtonsView(step: .constant(.main), inputImage: .constant(nil), pickerActivated: {}, saveFunction: {})
                 .previewLayout(PreviewLayout.sizeThatFits)
                 .padding()
                 .background(Color(.darkGray))
                 .environment(\.colorScheme, .dark)
-        
     }
 }

@@ -12,7 +12,9 @@ import UIKit
 
 import SwiftUI
 
+
     struct ProfileImagePicker: UIViewControllerRepresentable {
+        @Binding var test: Int
         
         @Environment(\.presentationMode) var presentationMode
         @Binding var image: UIImage?
