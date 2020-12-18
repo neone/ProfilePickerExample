@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ProfilePickerUtility
 
 struct ContentView: View {
     @Environment(\.colorScheme) var colorScheme
@@ -13,7 +14,7 @@ struct ContentView: View {
     @State private var finalImage: Image?
     
     @State var currentStep: PickProfileSteps = .main
-    @State var isShowingPhotoSelectionSheet = false
+//    @State var showPhotoPicker = true
     @State private var inputImage: UIImage?
     
     var body: some View {
@@ -21,7 +22,7 @@ struct ContentView: View {
         VStack {
             switch currentStep {
             case .main:
-                MainView(finalImage: $finalImage, isShowingPhotoSelectionSheet: $isShowingPhotoSelectionSheet, inputImage: $inputImage, currentStep: $currentStep)
+                MainView(finalImage: $finalImage, inputImage: $inputImage, currentStep: $currentStep)
             case .utility:
                 ProfilePickerUtility(image: $finalImage, step: $currentStep, showPicker: true)
             }

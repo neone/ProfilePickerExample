@@ -6,11 +6,11 @@
 //
 
 import SwiftUI
+import ProfilePickerUtility
 
 
 struct MainView: View {
     @Binding var finalImage: Image?
-    @Binding var isShowingPhotoSelectionSheet: Bool
     @Binding var inputImage: UIImage?
     @Binding var currentStep: PickProfileSteps
     
@@ -34,7 +34,6 @@ struct MainView: View {
                         .foregroundColor(Color(.systemGray2))
                 }
                 Button (action: {
-                    self.isShowingPhotoSelectionSheet = true
                     self.currentStep = .utility
                 }, label: {
                     Text("Pick photo")
@@ -46,13 +45,12 @@ struct MainView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color(.systemBackground))
-//        .statusBar(hidden: isShowingPhotoSelectionSheet)
     }
 }
 
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView(finalImage: .constant(nil), isShowingPhotoSelectionSheet: .constant(false), inputImage: .constant(nil), currentStep: .constant(.main))
+        MainView(finalImage: .constant(nil), inputImage: .constant(nil), currentStep: .constant(.main))
     }
 }

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Volumes/MacPro Vault/Developer/SwiftUI.Examples/PVPickNCrop/PVPickNCrop/ProfilePickerExampleApp.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>
