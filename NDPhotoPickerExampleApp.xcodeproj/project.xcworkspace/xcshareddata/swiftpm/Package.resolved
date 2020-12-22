@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ProfilePickerUtility",
+        "repositoryURL": "https://github.com/neone/ProfilePickerUtility.git",
+        "state": {
+          "branch": "main",
+          "revision": "1022ec52b54b7f42782d0c9cd4536323c37f268d",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
