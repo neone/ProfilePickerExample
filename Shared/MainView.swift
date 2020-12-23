@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import ProfilePickerUtility
+import PhotoPickerUtility
 
 
 struct MainView: View {

@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import ProfilePickerUtility
+import PhotoPickerUtility
 
 struct ContentView: View {
     @Environment(\.colorScheme) var colorScheme
@@ -24,7 +24,7 @@ struct ContentView: View {
             case .main:
                 MainView(finalImage: $finalImage, inputImage: $inputImage, currentStep: $currentStep)
             case .utility:
-                ProfilePickerUtility(image: $finalImage, step: $currentStep, showPicker: true)
+                PhotoPickerUtility(image: $finalImage, step: $currentStep, showPicker: true)
                     
             }
             

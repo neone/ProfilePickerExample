@@ -2,11 +2,11 @@
   "object": {
     "pins": [
       {
-        "package": "ProfilePickerUtility",
-        "repositoryURL": "https://github.com/neone/ProfilePickerUtility.git",
+        "package": "NDPhotoPickerUtility",
+        "repositoryURL": "https://github.com/neone/NDPhotoPickerUtility.git",
         "state": {
           "branch": "main",
-          "revision": "1022ec52b54b7f42782d0c9cd4536323c37f268d",
+          "revision": "20e83e83a4cfea78671dadb2533d9a32d3b80adb",
           "version": null
         }
       }
