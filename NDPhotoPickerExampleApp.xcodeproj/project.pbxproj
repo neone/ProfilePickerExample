@@ -17,7 +17,7 @@
 		D90436D625879AA800CA0B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90436AA25879AA800CA0B87 /* Assets.xcassets */; };
 		D97043E6258BEB2A0001BD08 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97043E5258BEB2A0001BD08 /* MainView.swift */; };
 		D97043E7258BEB2A0001BD08 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97043E5258BEB2A0001BD08 /* MainView.swift */; };
-		D9FEE2B825929D4C00B53930 /* PhotoPickerUtility in Frameworks */ = {isa = PBXBuildFile; productRef = D9FEE2B725929D4C00B53930 /* PhotoPickerUtility */; };
+		D9F1A3E525936CA5009FDA61 /* NDPhotoPickerUtility in Frameworks */ = {isa = PBXBuildFile; productRef = D9F1A3E425936CA5009FDA61 /* NDPhotoPickerUtility */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9FEE2B825929D4C00B53930 /* PhotoPickerUtility in Frameworks */,
+				D9F1A3E525936CA5009FDA61 /* NDPhotoPickerUtility in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,7 +183,7 @@
 			);
 			name = "NDPhotoPickerExampleApp (iOS)";
 			packageProductDependencies = (
-				D9FEE2B725929D4C00B53930 /* PhotoPickerUtility */,
+				D9F1A3E425936CA5009FDA61 /* NDPhotoPickerUtility */,
 			);
 			productName = "PVPickNCrop (iOS)";
 			productReference = D90436AF25879AA800CA0B87 /* NDPhotoPickerExampleApp.app */;
@@ -277,7 +277,7 @@
 			);
 			mainGroup = D90436A225879AA700CA0B87;
 			packageReferences = (
-				D9FEE2B625929D4C00B53930 /* XCRemoteSwiftPackageReference "NDPhotoPickerUtility" */,
+				D9F1A3E325936CA5009FDA61 /* XCRemoteSwiftPackageReference "NDPhotoPickerUtility" */,
 			);
 			productRefGroup = D90436B025879AA800CA0B87 /* Products */;
 			projectDirPath = "";
@@ -729,7 +729,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D9FEE2B625929D4C00B53930 /* XCRemoteSwiftPackageReference "NDPhotoPickerUtility" */ = {
+		D9F1A3E325936CA5009FDA61 /* XCRemoteSwiftPackageReference "NDPhotoPickerUtility" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/neone/NDPhotoPickerUtility.git";
 			requirement = {
@@ -744,10 +744,10 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = ProfilePickerUtility;
 		};
-		D9FEE2B725929D4C00B53930 /* PhotoPickerUtility */ = {
+		D9F1A3E425936CA5009FDA61 /* NDPhotoPickerUtility */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D9FEE2B625929D4C00B53930 /* XCRemoteSwiftPackageReference "NDPhotoPickerUtility" */;
-			productName = PhotoPickerUtility;
+			package = D9F1A3E325936CA5009FDA61 /* XCRemoteSwiftPackageReference "NDPhotoPickerUtility" */;
+			productName = NDPhotoPickerUtility;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

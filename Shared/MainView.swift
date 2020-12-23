@@ -6,19 +6,19 @@
 //
 
 import SwiftUI
-import PhotoPickerUtility
+import NDPhotoPickerUtility
 
 
 struct MainView: View {
-    @Binding var finalImage: Image?
+    @Binding var finalImage: UIImage?
     @Binding var inputImage: UIImage?
-    @Binding var currentStep: PickProfileSteps
+    @Binding var currentStep: PhotoPickerUtilityStep
     
     var body: some View {
         VStack {
             VStack {
                 if finalImage != nil {
-                    finalImage?
+                    Image(uiImage:(finalImage)!)
                         .resizable()
                         .frame(width: 100, height: 100)
                         .scaledToFill()

@@ -6,16 +6,19 @@
 //
 
 import SwiftUI
-import PhotoPickerUtility
+import NDPhotoPickerUtility
 
 struct ContentView: View {
     @Environment(\.colorScheme) var colorScheme
     
-    @State private var finalImage: Image?
+    @State private var finalImage: UIImage?
     
-    @State var currentStep: PickProfileSteps = .main
-//    @State var showPhotoPicker = true
+    @State var currentStep: PhotoPickerUtilityStep = .main
     @State private var inputImage: UIImage?
+    
+    func pictureSaved() {
+        currentStep = .main
+    }
     
     var body: some View {
         
@@ -24,7 +27,7 @@ struct ContentView: View {
             case .main:
                 MainView(finalImage: $finalImage, inputImage: $inputImage, currentStep: $currentStep)
             case .utility:
-                PhotoPickerUtility(image: $finalImage, step: $currentStep, showPicker: true)
+                PhotoPickerUtility(returnedImage: $finalImage, showPicker: true, pictureSaved: pictureSaved)
                     
             }
             
@@ -35,7 +38,7 @@ struct ContentView: View {
     
     func loadImage() {
         guard let inputImage = inputImage else { return }
-        finalImage = Image(uiImage: inputImage)
+        finalImage = inputImage
     }
 }
 
