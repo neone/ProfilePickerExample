@@ -7,18 +7,27 @@
 
 import SwiftUI
 import NDPhotoPickerUtility
-
+import NDElements
 
 struct MainView: View {
     @Binding var finalImage: UIImage?
     @Binding var inputImage: UIImage?
     @Binding var currentStep: PhotoPickerUtilityStep
     
+    func displayImage(uiImage: UIImage) -> Image {
+        #if os(iOS)
+        return Image(uiImage: uiImage)
+        #elseif os(macOS)
+        return Image(nsImage: uiImage)
+        #endif
+    }
+    
+    
     var body: some View {
         VStack {
             VStack {
                 if finalImage != nil {
-                    Image(uiImage:(finalImage)!)
+                    displayImage(uiImage: finalImage!)
                         .resizable()
                         .frame(width: 100, height: 100)
                         .scaledToFill()
@@ -31,7 +40,7 @@ struct MainView: View {
                         .scaledToFill()
                         .frame(width: 100, height: 100)
                         .aspectRatio(contentMode: .fit)
-                        .foregroundColor(Color(.systemGray2))
+                        .foregroundColor(Color.gray)
                 }
                 Button (action: {
                     self.currentStep = .utility
@@ -44,7 +53,7 @@ struct MainView: View {
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color(.systemBackground))
+        .background(Color(NDResources.Colors.NeuColors.Background.primaryModal))
     }
 }
 
@@ -54,3 +63,4 @@ struct MainView_Previews: PreviewProvider {
         MainView(finalImage: .constant(nil), inputImage: .constant(nil), currentStep: .constant(.main))
     }
 }
+

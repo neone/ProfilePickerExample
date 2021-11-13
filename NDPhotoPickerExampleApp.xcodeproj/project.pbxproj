@@ -15,27 +15,14 @@
 		D90436D425879AA800CA0B87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90436A925879AA800CA0B87 /* ContentView.swift */; };
 		D90436D525879AA800CA0B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90436AA25879AA800CA0B87 /* Assets.xcassets */; };
 		D90436D625879AA800CA0B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90436AA25879AA800CA0B87 /* Assets.xcassets */; };
+		D95233AC273F0EA6007DA9F3 /* macOSPhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95233AA273F0EA6007DA9F3 /* macOSPhotoPicker.swift */; };
 		D97043E6258BEB2A0001BD08 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97043E5258BEB2A0001BD08 /* MainView.swift */; };
 		D97043E7258BEB2A0001BD08 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97043E5258BEB2A0001BD08 /* MainView.swift */; };
-		D9F1A3E525936CA5009FDA61 /* NDPhotoPickerUtility in Frameworks */ = {isa = PBXBuildFile; productRef = D9F1A3E425936CA5009FDA61 /* NDPhotoPickerUtility */; };
+		D9744355273FEF7F008E03E5 /* NDPhotoPickerUtility in Frameworks */ = {isa = PBXBuildFile; productRef = D9744354273FEF7F008E03E5 /* NDPhotoPickerUtility */; };
+		D9744357273FEF85008E03E5 /* NDPhotoPickerUtility in Frameworks */ = {isa = PBXBuildFile; productRef = D9744356273FEF85008E03E5 /* NDPhotoPickerUtility */; };
+		D9744359273FFD75008E03E5 /* SwiftUIColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9744358273FFD75008E03E5 /* SwiftUIColors.xcassets */; };
+		D974435A273FFD75008E03E5 /* SwiftUIColors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9744358273FFD75008E03E5 /* SwiftUIColors.xcassets */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D90436C025879AA800CA0B87 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D90436A325879AA700CA0B87 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D90436AE25879AA800CA0B87;
-			remoteInfo = "PVPickNCrop (iOS)";
-		};
-		D90436CB25879AA800CA0B87 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D90436A325879AA700CA0B87 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D90436B625879AA800CA0B87;
-			remoteInfo = "PVPickNCrop (macOS)";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D90436A825879AA800CA0B87 /* ProfilePickerExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePickerExampleApp.swift; sourceTree = "<group>"; };
@@ -52,7 +39,9 @@
 		D90436CA25879AA800CA0B87 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90436CE25879AA800CA0B87 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		D90436D025879AA800CA0B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D95233AA273F0EA6007DA9F3 /* macOSPhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macOSPhotoPicker.swift; sourceTree = "<group>"; };
 		D97043E5258BEB2A0001BD08 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		D9744358273FFD75008E03E5 /* SwiftUIColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SwiftUIColors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9F1A3E525936CA5009FDA61 /* NDPhotoPickerUtility in Frameworks */,
+				D9744355273FEF7F008E03E5 /* NDPhotoPickerUtility in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9744357273FEF85008E03E5 /* NDPhotoPickerUtility in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +97,9 @@
 				D90436A825879AA800CA0B87 /* ProfilePickerExampleApp.swift */,
 				D90436A925879AA800CA0B87 /* ContentView.swift */,
 				D97043E5258BEB2A0001BD08 /* MainView.swift */,
+				D95233AA273F0EA6007DA9F3 /* macOSPhotoPicker.swift */,
 				D90436AA25879AA800CA0B87 /* Assets.xcassets */,
+				D9744358273FFD75008E03E5 /* SwiftUIColors.xcassets */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -183,7 +175,7 @@
 			);
 			name = "NDPhotoPickerExampleApp (iOS)";
 			packageProductDependencies = (
-				D9F1A3E425936CA5009FDA61 /* NDPhotoPickerUtility */,
+				D9744354273FEF7F008E03E5 /* NDPhotoPickerUtility */,
 			);
 			productName = "PVPickNCrop (iOS)";
 			productReference = D90436AF25879AA800CA0B87 /* NDPhotoPickerExampleApp.app */;
@@ -202,6 +194,9 @@
 			dependencies = (
 			);
 			name = "NDPhotoPickerExampleApp (macOS)";
+			packageProductDependencies = (
+				D9744356273FEF85008E03E5 /* NDPhotoPickerUtility */,
+			);
 			productName = "PVPickNCrop (macOS)";
 			productReference = D90436B725879AA800CA0B87 /* NDPhotoPickerExampleApp.app */;
 			productType = "com.apple.product-type.application";
@@ -217,7 +212,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				D90436C125879AA800CA0B87 /* PBXTargetDependency */,
 			);
 			name = "Tests iOS";
 			productName = "Tests iOS";
@@ -235,7 +229,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				D90436CC25879AA800CA0B87 /* PBXTargetDependency */,
 			);
 			name = "Tests macOS";
 			productName = "Tests macOS";
@@ -249,7 +242,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1220;
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					D90436AE25879AA800CA0B87 = {
 						CreatedOnToolsVersion = 12.2;
@@ -277,7 +270,6 @@
 			);
 			mainGroup = D90436A225879AA700CA0B87;
 			packageReferences = (
-				D9F1A3E325936CA5009FDA61 /* XCRemoteSwiftPackageReference "NDPhotoPickerUtility" */,
 			);
 			productRefGroup = D90436B025879AA800CA0B87 /* Products */;
 			projectDirPath = "";
@@ -297,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D90436D525879AA800CA0B87 /* Assets.xcassets in Resources */,
+				D9744359273FFD75008E03E5 /* SwiftUIColors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D90436D625879AA800CA0B87 /* Assets.xcassets in Resources */,
+				D974435A273FFD75008E03E5 /* SwiftUIColors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D95233AC273F0EA6007DA9F3 /* macOSPhotoPicker.swift in Sources */,
 				D90436D425879AA800CA0B87 /* ContentView.swift in Sources */,
 				D97043E7258BEB2A0001BD08 /* MainView.swift in Sources */,
 				D90436D225879AA800CA0B87 /* ProfilePickerExampleApp.swift in Sources */,
@@ -364,16 +359,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D90436C125879AA800CA0B87 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D90436AE25879AA800CA0B87 /* NDPhotoPickerExampleApp (iOS) */;
-			targetProxy = D90436C025879AA800CA0B87 /* PBXContainerItemProxy */;
-		};
-		D90436CC25879AA800CA0B87 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D90436B625879AA800CA0B87 /* NDPhotoPickerExampleApp (macOS) */;
-			targetProxy = D90436CB25879AA800CA0B87 /* PBXContainerItemProxy */;
-		};
 		D9A55FD8258BBEDB00FA1D58 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = D9A55FD7258BBEDB00FA1D58 /* ProfilePickerUtility */;
@@ -432,8 +417,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -487,8 +472,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -505,12 +490,12 @@
 				DEVELOPMENT_TEAM = 77YXYQDT3J;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.neone.NDContactsExampleApp.PVPickNCrop;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neone.photoPickerExample;
 				PRODUCT_NAME = NDPhotoPickerExampleApp;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -527,12 +512,12 @@
 				DEVELOPMENT_TEAM = 77YXYQDT3J;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.neone.NDContactsExampleApp.PVPickNCrop;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neone.photoPickerExample;
 				PRODUCT_NAME = NDPhotoPickerExampleApp;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -547,6 +532,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 77YXYQDT3J;
@@ -557,8 +543,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.neone.NDContactsExampleApp.PVPickNCrop;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neone.photoPickerExample;
 				PRODUCT_NAME = NDPhotoPickerExampleApp;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
@@ -571,6 +557,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 77YXYQDT3J;
@@ -581,8 +568,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.neone.NDContactsExampleApp.PVPickNCrop;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neone.photoPickerExample;
 				PRODUCT_NAME = NDPhotoPickerExampleApp;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
@@ -607,7 +594,6 @@
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "PVPickNCrop (iOS)";
 			};
 			name = Debug;
 		};
@@ -629,7 +615,6 @@
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "PVPickNCrop (iOS)";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -728,26 +713,18 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		D9F1A3E325936CA5009FDA61 /* XCRemoteSwiftPackageReference "NDPhotoPickerUtility" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/neone/NDPhotoPickerUtility.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
+		D9744354273FEF7F008E03E5 /* NDPhotoPickerUtility */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NDPhotoPickerUtility;
+		};
+		D9744356273FEF85008E03E5 /* NDPhotoPickerUtility */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NDPhotoPickerUtility;
+		};
 		D9A55FD7258BBEDB00FA1D58 /* ProfilePickerUtility */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ProfilePickerUtility;
-		};
-		D9F1A3E425936CA5009FDA61 /* NDPhotoPickerUtility */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D9F1A3E325936CA5009FDA61 /* XCRemoteSwiftPackageReference "NDPhotoPickerUtility" */;
-			productName = NDPhotoPickerUtility;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

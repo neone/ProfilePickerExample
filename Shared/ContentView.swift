@@ -7,6 +7,7 @@
 
 import SwiftUI
 import NDPhotoPickerUtility
+import NDElements
 
 struct ContentView: View {
     @Environment(\.colorScheme) var colorScheme
@@ -20,6 +21,12 @@ struct ContentView: View {
         currentStep = .main
     }
     
+#if os(iOS)
+    var screenSize = UIScreen.main.bounds.size
+#elseif os(macOS)
+    var screenSize = CGSize(width: 640, height: 640)
+#endif
+    
     var body: some View {
         
         VStack {
@@ -27,13 +34,17 @@ struct ContentView: View {
             case .main:
                 MainView(finalImage: $finalImage, inputImage: $inputImage, currentStep: $currentStep)
             case .utility:
-                PhotoPickerUtility(returnedImage: $finalImage, showPicker: true, pictureSaved: pictureSaved)
+                PhotoPickerUtility(returnedImage: $finalImage, showPicker: true, screenSize: screenSize, pictureSaved: pictureSaved, cancelPressed: {})
                     
             }
             
         }
+        
+#if os(iOS)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .animation(.easeInOut(duration: 0.24))
+#elseif os(macOS)
+        .frame(width: 1000, height: 800)
+#endif
     }
     
     func loadImage() {
