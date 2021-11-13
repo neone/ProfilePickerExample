@@ -34,7 +34,9 @@ struct ContentView: View {
             case .main:
                 MainView(finalImage: $finalImage, inputImage: $inputImage, currentStep: $currentStep)
             case .utility:
-                PhotoPickerUtility(returnedImage: $finalImage, showPicker: true, screenSize: screenSize, pictureSaved: pictureSaved, cancelPressed: {})
+                PhotoPickerUtility(returnedImage: $finalImage, showPicker: true, screenSize: screenSize, pictureSaved: pictureSaved, cancelPressed: {
+                    currentStep = .main
+                })
                     
             }
             

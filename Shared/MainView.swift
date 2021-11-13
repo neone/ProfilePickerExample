@@ -50,6 +50,7 @@ struct MainView: View {
                         .font(.body)
                         .padding(8)
                 })
+                    .buttonStyle(PlainButtonStyle())
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)

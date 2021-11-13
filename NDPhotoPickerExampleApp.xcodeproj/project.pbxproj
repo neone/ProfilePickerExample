@@ -15,7 +15,6 @@
 		D90436D425879AA800CA0B87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90436A925879AA800CA0B87 /* ContentView.swift */; };
 		D90436D525879AA800CA0B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90436AA25879AA800CA0B87 /* Assets.xcassets */; };
 		D90436D625879AA800CA0B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90436AA25879AA800CA0B87 /* Assets.xcassets */; };
-		D95233AC273F0EA6007DA9F3 /* macOSPhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95233AA273F0EA6007DA9F3 /* macOSPhotoPicker.swift */; };
 		D97043E6258BEB2A0001BD08 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97043E5258BEB2A0001BD08 /* MainView.swift */; };
 		D97043E7258BEB2A0001BD08 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97043E5258BEB2A0001BD08 /* MainView.swift */; };
 		D9744355273FEF7F008E03E5 /* NDPhotoPickerUtility in Frameworks */ = {isa = PBXBuildFile; productRef = D9744354273FEF7F008E03E5 /* NDPhotoPickerUtility */; };
@@ -39,7 +38,6 @@
 		D90436CA25879AA800CA0B87 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90436CE25879AA800CA0B87 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		D90436D025879AA800CA0B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D95233AA273F0EA6007DA9F3 /* macOSPhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macOSPhotoPicker.swift; sourceTree = "<group>"; };
 		D97043E5258BEB2A0001BD08 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D9744358273FFD75008E03E5 /* SwiftUIColors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SwiftUIColors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,7 +95,6 @@
 				D90436A825879AA800CA0B87 /* ProfilePickerExampleApp.swift */,
 				D90436A925879AA800CA0B87 /* ContentView.swift */,
 				D97043E5258BEB2A0001BD08 /* MainView.swift */,
-				D95233AA273F0EA6007DA9F3 /* macOSPhotoPicker.swift */,
 				D90436AA25879AA800CA0B87 /* Assets.xcassets */,
 				D9744358273FFD75008E03E5 /* SwiftUIColors.xcassets */,
 			);
@@ -333,7 +330,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D95233AC273F0EA6007DA9F3 /* macOSPhotoPicker.swift in Sources */,
 				D90436D425879AA800CA0B87 /* ContentView.swift in Sources */,
 				D97043E7258BEB2A0001BD08 /* MainView.swift in Sources */,
 				D90436D225879AA800CA0B87 /* ProfilePickerExampleApp.swift in Sources */,
