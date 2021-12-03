@@ -12,10 +12,9 @@ import NDElements
 struct ContentView: View {
     @Environment(\.colorScheme) var colorScheme
     
-    @State private var finalImage: UIImage?
-    
     @State var currentStep: PhotoPickerUtilityStep = .main
     @State private var inputImage: UIImage?
+    @State private var finalImage: UIImage?
     
     func pictureSaved() {
         currentStep = .main
